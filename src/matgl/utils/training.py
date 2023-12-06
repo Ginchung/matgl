@@ -265,7 +265,7 @@ class PotentialLightningModule(MatglLightningModuleMixin, pl.LightningModule):
         element_refs: np.ndarray | None = None,
         energy_weight: float = 1.0,
         force_weight: float = 1.0,
-        stress_weight: float = 0.0,
+        stress_weight: float = 0.05, # by default: 0.0,
         site_wise_weight: float = 0.0,
         data_mean: float = 0.0,
         data_std: float = 1.0,
